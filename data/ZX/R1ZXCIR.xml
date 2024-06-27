@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Election>
+  <Scrutin>
+    <Type>Législatives</Type>
+    <Annee>2022</Annee>
+  </Scrutin>
+  <Departement>
+    <CodDpt>ZX</CodDpt>
+    <LibDpt>Saint-Martin/Saint-Barthélemy</LibDpt>
+    <Circonscriptions>
+      <Circonscription>
+        <CodCirElec>ZX01</CodCirElec>
+        <LibCirElec>1ère circonscription</LibCirElec>
+        <NbSap>1</NbSap>
+        <NbSiePourvus>0</NbSiePourvus>
+        <Tours>
+          <Tour>
+            <NumTour>1</NumTour>
+            <Mentions>
+              <Inscrits>
+                <Nombre>24563</Nombre>
+              </Inscrits>
+              <Abstentions>
+                <Nombre>19344</Nombre>
+                <RapportInscrits>78,75</RapportInscrits>
+              </Abstentions>
+              <Votants>
+                <Nombre>5219</Nombre>
+                <RapportInscrits>21,25</RapportInscrits>
+              </Votants>
+              <Blancs>
+                <Nombre>107</Nombre>
+                <RapportInscrits>0,44</RapportInscrits>
+                <RapportVotants>2,05</RapportVotants>
+              </Blancs>
+              <Nuls>
+                <Nombre>51</Nombre>
+                <RapportInscrits>0,21</RapportInscrits>
+                <RapportVotants>0,98</RapportVotants>
+              </Nuls>
+              <Exprimes>
+                <Nombre>5061</Nombre>
+                <RapportInscrits>20,60</RapportInscrits>
+                <RapportVotants>96,97</RapportVotants>
+              </Exprimes>
+            </Mentions>
+            <Resultats>
+              <Candidats>
+                <Candidat>
+                  <NumPanneauCand>1</NumPanneauCand>
+                  <NomPsn>JAVOIS</NomPsn>
+                  <PrenomPsn>Claire</PrenomPsn>
+                  <CivilitePsn>Mme</CivilitePsn>
+                  <CodNuaCand>LR</CodNuaCand>
+                  <LibNuaCand>Les Républicains</LibNuaCand>
+                  <NbVoix>330</NbVoix>
+                  <RapportExprimes>6,52</RapportExprimes>
+                  <RapportInscrits>1,34</RapportInscrits>
+                  <Elu>NON</Elu>
+                </Candidat>
+                <Candidat>
+                  <NumPanneauCand>2</NumPanneauCand>
+                  <NomPsn>GIBBS</NomPsn>
+                  <PrenomPsn>Daniel</PrenomPsn>
+                  <CivilitePsn>M.</CivilitePsn>
+                  <CodNuaCand>DVD</CodNuaCand>
+                  <LibNuaCand>Divers droite</LibNuaCand>
+                  <NbVoix>1398</NbVoix>
+                  <RapportExprimes>27,62</RapportExprimes>
+                  <RapportInscrits>5,69</RapportInscrits>
+                  <Elu>QUALIF T2</Elu>
+                </Candidat>
+                <Candidat>
+                  <NumPanneauCand>3</NumPanneauCand>
+                  <NomPsn>CAZE</NomPsn>
+                  <PrenomPsn>Béatrice</PrenomPsn>
+                  <CivilitePsn>Mme</CivilitePsn>
+                  <CodNuaCand>REC</CodNuaCand>
+                  <LibNuaCand>Reconquête !</LibNuaCand>
+                  <NbVoix>447</NbVoix>
+                  <RapportExprimes>8,83</RapportExprimes>
+                  <RapportInscrits>1,82</RapportInscrits>
+                  <Elu>NON</Elu>
+                </Candidat>
+                <Candidat>
+                  <NumPanneauCand>4</NumPanneauCand>
+                  <NomPsn>PAINES STEPHEN</NomPsn>
+                  <PrenomPsn>Victor</PrenomPsn>
+                  <CivilitePsn>M.</CivilitePsn>
+                  <CodNuaCand>REG</CodNuaCand>
+                  <LibNuaCand>Régionaliste</LibNuaCand>
+                  <NbVoix>199</NbVoix>
+                  <RapportExprimes>3,93</RapportExprimes>
+                  <RapportInscrits>0,81</RapportInscrits>
+                  <Elu>NON</Elu>
+                </Candidat>
+                <Candidat>
+                  <NumPanneauCand>5</NumPanneauCand>
+                  <NomPsn>RIVERE BONZOM</NomPsn>
+                  <PrenomPsn>Sabrina</PrenomPsn>
+                  <CivilitePsn>Mme</CivilitePsn>
+                  <CodNuaCand>DIV</CodNuaCand>
+                  <LibNuaCand>Divers</LibNuaCand>
+                  <NbVoix>304</NbVoix>
+                  <RapportExprimes>6,01</RapportExprimes>
+                  <RapportInscrits>1,24</RapportInscrits>
+                  <Elu>NON</Elu>
+                </Candidat>
+                <Candidat>
+                  <NumPanneauCand>6</NumPanneauCand>
+                  <NomPsn>GUMBS</NomPsn>
+                  <PrenomPsn>Frantz</PrenomPsn>
+                  <CivilitePsn>M.</CivilitePsn>
+                  <CodNuaCand>DVC</CodNuaCand>
+                  <LibNuaCand>Divers centre</LibNuaCand>
+                  <NbVoix>2383</NbVoix>
+                  <RapportExprimes>47,09</RapportExprimes>
+                  <RapportInscrits>9,70</RapportInscrits>
+                  <Elu>QUALIF T2</Elu>
+                </Candidat>
+              </Candidats>
+            </Resultats>
+          </Tour>
+        </Tours>
+      </Circonscription>
+    </Circonscriptions>
+  </Departement>
+</Election>
