@@ -97,7 +97,13 @@ export const useElectionResults = () => {
 };
 
 const useNuances = () => {
-    const [nuances, setNuances] = useState<Nuance[]>(NUANCES);
+    // Utilisation du localStorage pour ne pas refetchs des résultats déjà obtenus en cas de rechargement de la page
+    let nuancesToUse = NUANCES;
+    if(localStorage.getItem('nuances') !== null) {
+        nuancesToUse = JSON.parse(localStorage.getItem('nuances')!);
+    } 
+    
+    const [nuances, setNuances] = useState<Nuance[]>(nuancesToUse);
 
     const findCodeNuanceIndex = (codeMinistere: string) => {
         return nuances.findIndex((nuance) =>
@@ -124,13 +130,14 @@ const useNuances = () => {
         // Incrémentation si la nuance est trouvée
         if (indexNuance !== -1) {
             updatedNuances[indexNuance].nombreQualifies++;
-            setNuances(updatedNuances);
         } else {
             // Incrémentation du groupe "Autres" sinon
             const indexAutresNuances = findAutresNuancesIndex();
             updatedNuances[indexAutresNuances].nombreQualifies++;
-            setNuances(updatedNuances);
         }
+        setNuances(updatedNuances);
+        localStorage.setItem('nuances', JSON.stringify(updatedNuances));
+
     };
 
     return {
@@ -140,7 +147,13 @@ const useNuances = () => {
 };
 
 const useFiles = () => {
-    const [files, setFiles] = useState<DataFile[]>(FILES);
+    // Utilisation du localStorage pour ne pas refetchs des résultats déjà obtenus en cas de rechargement de la page
+    let filesToUse = FILES;
+    if(localStorage.getItem('files') !== null) {
+        filesToUse = JSON.parse(localStorage.getItem('files')!);
+    }
+
+    const [files, setFiles] = useState<DataFile[]>(filesToUse);
 
     const markFileAsFetched = (url: string) => {
         const updatedFiles = [...files];
@@ -151,6 +164,8 @@ const useFiles = () => {
             updatedFiles[indexToUpdate].fetched = true;
             setFiles(updatedFiles);
         }
+
+        localStorage.setItem('files', JSON.stringify(updatedFiles));
     };
 
     return {
